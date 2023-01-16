@@ -1,1 +1,11 @@
 # Pricing_Optimization
+
+The algorithm you are asked to create is a Python script. The outputs of the algorithm are recommended next-period prices that maximize total firm profits = total sales x (price - per-unit cost). In each period, you have accurate predictions of market conditions and of your per-unit cost in the next period. You also have detailed information about the present and the past: current and past market conditions, current and past own and competitor prices, current and past own per-unit costs, current and past own sales and market share performance. You can use new inputs/ features or combinations of inputs/ features in the algorithm.
+
+To design and train the algorithm, you have data from 55 markets. For each period (day) and market of the training data, you observe the price of the firm you are asked to optimize for, their per-unit costs, their total units sold (normalized), their sales share in that period, an average of competitor prices, and a variable summarizing market conditions in that period (on a scale between 0 and 100). You also observe a period and market identifier. A detailed description of the variables in the raw data is below.
+
+There is no need to build a development interface, but the Python code should have several clearly marked functions: • process_training_data() - a function that takes the raw data and processes it to generate the inputs required to train the model. • train_model() - a function that takes inputs and trains the model. • predict_price() - a function that takes new inputs and the trained model as arguments, and recommends a new price for next period.
+
+Any pricing algorithms companies implement can be subject to inspection and regulation by antitrust authorities, who are becoming increasingly concerned with algorithmic coordination. Examples of coordination include algorithms learning to "team up” with competitors and coordinate on maintaining high prices by punishing, or threatening to punish, competitor price reductions by reducing own price even further. Please take this into consideration when developing your algorithm.
+
+We will evaluate the quality of your algorithm using historical data, as we won’t be employing your algorithm before the end of your contract.
